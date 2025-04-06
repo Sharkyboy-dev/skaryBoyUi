@@ -120,7 +120,12 @@
   text-align: center;
   white-space: normal;
   box-shadow: 4px 4px 0 white, 0 0 0 3px black;
-  transition: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ButtonsContainer button:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 0 white, 0 0 0 3px black;
 }
 
 /* 🟦 Aqua Blue */
