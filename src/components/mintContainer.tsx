@@ -7,13 +7,22 @@ import Link from "next/link";
 const MintContainer = () => {
   return (
     <section className="comic-panel">
+      {/* ✅ Floating Bubbles Layer */}
+      <div className="bubbles">
+        <span>🦈</span>
+        <span>💎</span>
+        <span>🦈</span>
+        <span>💎</span>
+        <span>🦈</span>
+      </div>
+
       <div className={styles.MintDiv}>
         <div className={styles.ContentContainer}>
           {/* LEFT SIDE */}
           <div className={styles.ContentLeft}>
             <img src="/logoGif.gif" alt="SharkyBoy" />
 
-            {/* ✅ Moved Speech Bubble ABOVE the Mint button */}
+            {/* ✅ Speech Bubble ABOVE Mint button */}
             <div className="speechBubble">
               GENESIS AWAKENS. MINT NOW
             </div>
