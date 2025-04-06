@@ -127,9 +127,20 @@ h1, h2, h3, h4 {
 .bubbles span {
   position: absolute;
   bottom: -50px;
-  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.15); /* translucent bubble */
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
   animation: rise 12s infinite ease-in;
   opacity: 0.7;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  color: white;
 }
 
 /* Different positions + delays for randomness */
