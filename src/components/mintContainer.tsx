@@ -15,6 +15,11 @@ const MintContainer = () => {
             <Link href="https://mint.sharkyboy.com" target="_blank">
               <button className={styles.mintButton}>Mint Now</button>
             </Link>
+
+            {/* 💬 Speech Bubble */}
+            <div className="speechBubble">
+              THIS IS YOUR FINAL FORM, SHARKYBOY! 🦈💥
+            </div>
           </div>
 
           {/* RIGHT SIDE */}
