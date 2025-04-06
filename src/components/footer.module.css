@@ -1,83 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&display=swap');
+
 .FooterContainer {
-  border-top: 1px solid var(--c2);
+  background-color: #000;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  padding: 2rem 1rem 1rem;
+  border-top: 1px solid #333;
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  margin: 0 0 2em 0;
-  padding: 1em 0;
-  background-color: black;
-
+  align-items: center;
+  width: 100%;
 }
 
 .FooterTop {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr 1.5fr;
-  gap: 1em;
-  padding: 2em 3em;
-  border-bottom: 1px solid var(--c2);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .FooterLinksBox {
-  /* border: 1px solid rgb(255, 255, 255); */
+  flex: 1;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.Icons {
-  /* border: 1px solid black; */
-  display: flex;
-  gap: 1em;
-  font-size: 2em;
+  gap: 0.5rem;
   align-items: center;
+  text-align: center;
 }
 
 .FooterLinksBox span {
-  font-size: 1.3em;
-  font-weight: 500;
-  color: var(--c2);
+  font-weight: 900;
+  color: #d4af37;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.FooterLinksBox a {
+  color: #fff;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.FooterLinksBox a:hover {
+  color: #d4af37;
+}
+
+.Icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.75rem;
+  font-size: 1.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Icons a {
+  color: #fff;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.Icons a:hover {
+  transform: scale(1.2);
+  color: #d4af37;
 }
 
 .NewsLetter {
   display: flex;
-  gap: 1em;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .NewsLetter input {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
   border: none;
-  font-size: 1em;
-  padding: 10px;
-  max-width: 280px;
-  width: 400px;
-  background-color: rgb(147, 149, 150);
-  border-radius: 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  flex: 1 1 200px;
+  max-width: 300px;
 }
 
 .NewsLetter button {
-  font-size: 1em;
-  padding: 0.3em 2em;
+  padding: 0.5rem 1rem;
+  background-color: #d4af37;
   border: none;
-  border-radius: 10px;
-  background-color: black;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.NewsLetter button:hover {
+  background-color: #b5942c;
 }
 
 .FooterText {
+  font-size: 0.75rem;
   text-align: center;
+  color: #888;
+  border-top: 1px solid #222;
+  padding-top: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  font-family: 'Orbitron', sans-serif;
 }
 
-@media screen and (max-width:1075px) {
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
   .FooterTop {
-    grid-template-columns: 1fr;
-    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
   }
-}
 
-@media screen and (max-width:600px) {
-  .FooterTop {
-    padding: 2em 1em;
+  .FooterLinksBox {
+    align-items: center;
+    text-align: center;
+  }
+
+  .Icons {
+    justify-content: center;
   }
 
   .NewsLetter {
-    flex-direction: column;
+    justify-content: center;
   }
 }
