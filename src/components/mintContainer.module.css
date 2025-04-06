@@ -6,7 +6,7 @@
   font-family: 'Orbitron', sans-serif;
 }
 
-/* ✅ Comic Panel */
+/* ✅ Comic Panel Container */
 .ContentContainer {
   margin: 1em;
   display: flex;
@@ -17,7 +17,7 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 0.75);
   border: 6px solid white;
-  box-shadow: 0 0 0 6px black, 0 0 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 6px 6px 0 #00ffff;
   border-radius: 1em;
   padding: 2em;
   position: relative;
@@ -25,17 +25,17 @@
 }
 
 .ContentLeft {
-  border: 4px solid rgb(77, 77, 77);
+  border: 6px solid white;
+  box-shadow: 6px 6px 0 #ff00ff;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
   padding: 1.5em;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
   border-radius: 1em;
   width: 100%;
   max-width: 600px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
 .ContentLeft img {
@@ -43,7 +43,7 @@
   max-width: 100%;
   border-radius: 1em;
   padding: 10px;
-  box-shadow: 0 0 15px white;
+  box-shadow: 0 0 20px white;
 }
 
 .ContentLeft button {
@@ -57,8 +57,12 @@
   font-weight: 900;
   text-transform: uppercase;
   font-family: 'Orbitron', sans-serif;
-  box-shadow: 0 0 0 3px black, 4px 4px 0 white;
+  box-shadow: 4px 4px 0 white, 0 0 0 3px black;
   transition: all 0.2s ease;
+}
+
+.ContentLeft button:hover {
+  transform: scale(1.05);
 }
 
 .ContentRight {
@@ -74,11 +78,11 @@
   flex-direction: column;
   align-items: center;
   gap: 1.5em;
-  background-color: rgba(0, 0, 0, 0.664);
-  border: 4px solid white;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 6px solid white;
   padding: 2em 1em;
   border-radius: 1em;
-  box-shadow: 6px 6px 0 black;
+  box-shadow: 6px 6px 0 #ffff00;
 }
 
 .DescDiv span {
@@ -115,16 +119,15 @@
   word-wrap: break-word;
   text-align: center;
   white-space: normal;
-  box-shadow: 0 0 0 3px black, 4px 4px 0 white;
-  transition: none;
+  box-shadow: 4px 4px 0 white, 0 0 0 3px black;
 }
 
 .ButtonsContainer button:nth-child(1) {
-  background-color: rgba(128, 225, 238, 0.9);
+  background-color: rgba(128, 225, 238, 0.95);
 }
 
 .ButtonsContainer button:nth-child(2) {
-  background-color: rgba(241, 170, 170, 0.9);
+  background-color: rgba(241, 170, 170, 0.95);
 }
 
 .ButtonsContainer .noHoverEffect:hover {
@@ -152,10 +155,11 @@
 }
 
 .MintCountBox {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   padding: 2em;
   border-radius: 1em;
-  border: 4px solid white;
+  border: 6px solid white;
+  box-shadow: 6px 6px 0 #00ffff;
 }
 
 .MintCountBox span,
