@@ -33,11 +33,11 @@ export default function RootLayout({
   };
 
   const navLinkHoverStyle = `
-    a:hover::after {
+    header a:hover::after {
       transform: scaleX(1);
       opacity: 1;
     }
-    a::after {
+    header a::after {
       content: '';
       position: absolute;
       left: 0;
