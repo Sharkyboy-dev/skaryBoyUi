@@ -6,23 +6,27 @@ import Link from "next/link";
 
 const MintContainer = () => {
   return (
-    <section className={styles.MintDiv}>
+    <div className={styles.MintDiv}>
       <div className={styles.ContentContainer}>
-        {/* Left: Image + Mint Now */}
+        {/* LEFT SIDE */}
         <div className={styles.ContentLeft}>
-          <img src="/logoGif.gif" alt="Sharkyboy NFT" />
+          <img src="/logoGif.gif" alt="SharkyBoy" />
           <Link href="https://mint.sharkyboy.com" target="_blank">
             <button>Mint Now</button>
           </Link>
         </div>
 
-        {/* Right: Text, Buttons, Icons */}
+        {/* RIGHT SIDE */}
         <div className={styles.ContentRight}>
           <div className={styles.DescDiv}>
-            <span>OWN THE STORY. SHAPE THE FUTURE. JOIN THE SHARKYGANG.</span>
+            <span>
+              OWN THE STORY. SHAPE THE FUTURE.
+              <br />
+              JOIN THE SHARKYGANG.
+            </span>
 
             <div className={styles.ButtonsContainer}>
-              <Link href="#orign">
+              <Link href="#origin">
                 <button>Origin Story</button>
               </Link>
               <Link href="#roadmap">
@@ -47,7 +51,7 @@ const MintContainer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
