@@ -15,16 +15,16 @@ const MintContainer = () => {
             <Link href="https://mint.sharkyboy.com" target="_blank">
               <button className={styles.mintButton}>ENTER</button>
             </Link>
+
+            {/* ✅ Speech Bubble moved here under the button */}
+            <div className="speechBubble">
+              GENESIS AWAKENS. MINT NOW
+            </div>
           </div>
 
           {/* RIGHT SIDE */}
           <div className={styles.ContentRight}>
             <div className={styles.DescDiv}>
-              {/* 💬 Speech Bubble */}
-              <div className="speechBubble">
-                THE LEGEND BEGINS. MINT YOUR SHARKYBOY! 🦈🔥
-              </div>
-
               <span
                 style={{
                   fontFamily: "var(--comic-title)",
