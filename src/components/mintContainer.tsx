@@ -18,7 +18,7 @@ const MintContainer = () => {
 
             {/* 💬 Speech Bubble */}
             <div className="speechBubble">
-              THIS IS YOUR FINAL FORM, SHARKYBOY! 🦈💥
+              GENESIS AWAKENS. MINT NOW!
             </div>
           </div>
 
