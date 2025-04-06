@@ -4,6 +4,8 @@
   padding: 2em 1em;
   min-height: fit-content;
   font-family: 'Orbitron', sans-serif;
+  position: relative;
+  overflow: hidden; /* Ensure bubbles don't overflow */
 }
 
 /* ✅ Comic Panel Container */
@@ -181,6 +183,77 @@
   width: 100%;
   flex-direction: row;
   align-items: center;
+}
+
+/* Floating Animated Bubbles */
+.bubbles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubbles span {
+  position: absolute;
+  display: block;
+  font-size: 1.2rem;
+  animation: floatUp 15s linear infinite;
+  opacity: 0.8;
+}
+
+.bubbles span:nth-child(1) {
+  left: 10%;
+  animation-duration: 14s;
+  font-size: 1.4rem;
+  color: #00ffff;
+  content: '🦈';
+}
+
+.bubbles span:nth-child(2) {
+  left: 30%;
+  animation-duration: 12s;
+  font-size: 1.2rem;
+  color: #ffffff;
+  content: '💎';
+}
+
+.bubbles span:nth-child(3) {
+  left: 50%;
+  animation-duration: 16s;
+  font-size: 1.6rem;
+  color: #66b6c3;
+  content: '🦈';
+}
+
+.bubbles span:nth-child(4) {
+  left: 70%;
+  animation-duration: 13s;
+  font-size: 1.3rem;
+  color: #e63946;
+  content: '💎';
+}
+
+.bubbles span:nth-child(5) {
+  left: 85%;
+  animation-duration: 17s;
+  font-size: 1.5rem;
+  color: #ff00ff;
+  content: '🦈';
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100%) scale(0.8);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1200%) scale(1.2);
+    opacity: 0;
+  }
 }
 
 /* Responsive tweaks */
