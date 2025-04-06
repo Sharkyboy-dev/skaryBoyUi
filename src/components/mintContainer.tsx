@@ -12,14 +12,15 @@ const MintContainer = () => {
           {/* LEFT SIDE */}
           <div className={styles.ContentLeft}>
             <img src="/logoGif.gif" alt="SharkyBoy" />
-            <Link href="https://mint.sharkyboy.com" target="_blank">
-              <button className={styles.mintButton}>ENTER</button>
-            </Link>
 
-            {/* ✅ Speech Bubble moved here under the button */}
+            {/* ✅ Moved Speech Bubble ABOVE the Mint button */}
             <div className="speechBubble">
               GENESIS AWAKENS. MINT NOW
             </div>
+
+            <Link href="https://mint.sharkyboy.com" target="_blank">
+              <button className={styles.mintButton}>ENTER</button>
+            </Link>
           </div>
 
           {/* RIGHT SIDE */}
