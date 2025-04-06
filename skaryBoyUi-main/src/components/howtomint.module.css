@@ -1,0 +1,49 @@
+.MainContainer {
+  padding: 3em 4em;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.MainContainer span {
+  font-size: 2.3em;
+  background: rgb(92, 225, 230);
+  background: linear-gradient(
+    108deg,
+    rgba(92, 225, 230, 1) 0%,
+    rgba(140, 82, 255, 1) 100%
+  );
+  padding: 0 1em;
+  color: black;
+  border-radius: 0.4em;
+  font-family: var(--my-font);
+}
+
+.ContentContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 2em 4em;
+}
+
+@media screen and (max-width: 1050px) {
+  .MainContainer {
+    padding: 2em 1em;
+  }
+
+  .ContentContainer {
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 2em 0;
+  }
+
+  .ContentContainer img {
+    width: 100%;
+    /* border: 1px solid white; */
+  }
+}

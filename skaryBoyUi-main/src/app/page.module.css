@@ -1,0 +1,17 @@
+.Maincontainer {
+    /* max-width: 1600px; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    margin: auto;
+
+
+
+}
+
+.HeroCOntainer {
+    background-image: url('/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

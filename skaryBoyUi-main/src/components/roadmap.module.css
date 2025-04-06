@@ -1,0 +1,50 @@
+.RoadmapContainer {
+  background-image: url("/bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 4em;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.heading {
+  font-size: 3em;
+  background-color: black;
+  padding: 0 1em;
+  border-radius: 0.5em;
+  font-family: var(--my-font);
+}
+
+.description {
+  border: 3px solid rgb(0, 0, 0);
+
+  width: 700px;
+  color: black;
+  background-color: var(--c2);
+  padding: 1em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  backdrop-filter: blur(2px);
+  font-weight: bold;
+}
+
+.description ul,
+.description ol {
+  padding-left: 2em;
+}
+
+@media screen and (max-width: 1000px) {
+  .RoadmapContainer {
+    max-height: fit-content;
+  }
+
+  .description {
+    width: 95vw;
+    margin: 0 1em;
+  }
+}
