@@ -166,3 +166,30 @@
 
 .Counttext {
   display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 950px) {
+  .ContentRight,
+  .ContentLeft {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .ContentLeft img {
+    width: 100%;
+  }
+
+  .ButtonsContainer button {
+    width: 90%;
+  }
+
+  .IconsContainer {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
