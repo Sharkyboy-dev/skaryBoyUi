@@ -19,7 +19,7 @@ body {
 body {
   color: var(--foreground);
   font-family: 'Orbitron', sans-serif;
-  background: url('/ocean-bg.png') no-repeat center center fixed;
+  background: url('/background.png') no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
   background-color: #000;
@@ -112,7 +112,7 @@ h1, h2, h3, h4 {
   z-index: 1;
 }
 
-/* ✅ Floating Emoji Bubble Animation */
+/* ✅ Floating Emoji Bubble Animation (optional to remove later) */
 .bubbles {
   position: fixed;
   top: 0;
@@ -132,7 +132,6 @@ h1, h2, h3, h4 {
   opacity: 0.7;
 }
 
-/* Different positions + delays for randomness */
 .bubbles span:nth-child(1) {
   left: 10%;
   animation-delay: 0s;
