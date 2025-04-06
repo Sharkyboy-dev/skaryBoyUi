@@ -26,12 +26,12 @@
   background-color: rgba(0, 0, 0, 0.664);
   border-radius: 1em;
   width: 100%;
-  max-width: 600px; /* ✅ Updated from 400px to 600px to match ContentRight */
+  max-width: 600px;
 }
 
 .ContentLeft img {
   width: 100%;
-  max-width: 100%; /* ✅ Ensures image doesn't overflow */
+  max-width: 100%;
   border-radius: 1em;
   padding: 10px;
   box-shadow: 0 0 15px white;
@@ -87,10 +87,10 @@
 }
 
 .ButtonsContainer button {
-  width: auto; /* ✅ Let the button auto-size based on content */
-  min-width: 200px; /* ✅ Ensures a minimum size for consistency */
+  width: auto;
+  min-width: 200px;
   max-width: 90%;
-  padding: 0.6em 1.2em; /* ✅ Increased horizontal padding */
+  padding: 0.6em 1.2em;
   font-size: 1.3em;
   border-radius: 10px;
   border: 4px solid white;
@@ -99,17 +99,25 @@
   text-transform: uppercase;
   cursor: pointer;
   font-family: 'Orbitron', sans-serif;
-  word-wrap: break-word; /* ✅ Ensures long words wrap */
+  word-wrap: break-word;
   text-align: center;
-  white-space: normal; /* ✅ Allow wrapping */
+  white-space: normal;
 }
 
+/* ✅ Backgrounds stay the same */
 .ButtonsContainer button:nth-child(1) {
   background-color: rgba(128, 225, 238, 0.767);
 }
 
 .ButtonsContainer button:nth-child(2) {
   background-color: rgba(241, 170, 170, 0.767);
+}
+
+/* ✅ Remove hover effects from mid-page buttons */
+.ButtonsContainer .noHoverEffect:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  background: inherit;
 }
 
 .IconsContainer {
