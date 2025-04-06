@@ -13,18 +13,18 @@ const MintContainer = () => {
           <div className={styles.ContentLeft}>
             <img src="/logoGif.gif" alt="SharkyBoy" />
             <Link href="https://mint.sharkyboy.com" target="_blank">
-              <button className={styles.mintButton}>Mint Now</button>
+              <button className={styles.mintButton}>ENTER</button>
             </Link>
-
-            {/* 💬 Speech Bubble */}
-            <div className="speechBubble">
-              GENESIS AWAKENS. MINT NOW!
-            </div>
           </div>
 
           {/* RIGHT SIDE */}
           <div className={styles.ContentRight}>
             <div className={styles.DescDiv}>
+              {/* 💬 Speech Bubble */}
+              <div className="speechBubble">
+                THE LEGEND BEGINS. MINT YOUR SHARKYBOY! 🦈🔥
+              </div>
+
               <span
                 style={{
                   fontFamily: "var(--comic-title)",
