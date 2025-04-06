@@ -47,8 +47,8 @@
 }
 
 .ContentLeft button {
-  color: white;
-  background-color: #ff0051; /* Bright pink-red for strong action vibe */
+  color: black;
+  background-color: #ffcc00; /* Comic yellow */
   font-size: 2em;
   padding: 10px 2em;
   border-radius: 10px;
@@ -59,16 +59,6 @@
   font-family: 'Orbitron', sans-serif;
   box-shadow: 0 0 0 3px black, 4px 4px 0 white;
   transition: all 0.2s ease;
-}
-
-.ButtonsContainer button:nth-child(1) {
-  background-color: #00d9ff; /* Electric aqua blue */
-  color: #000;
-}
-
-.ButtonsContainer button:nth-child(2) {
-  background-color: #ffd500; /* Comic book yellow */
-  color: #000;
 }
 
 .ContentLeft button:hover {
@@ -130,14 +120,17 @@
   text-align: center;
   white-space: normal;
   box-shadow: 4px 4px 0 white, 0 0 0 3px black;
+  transition: none;
 }
 
+/* 🟦 Aqua Blue */
 .ButtonsContainer button:nth-child(1) {
-  background-color: rgba(128, 225, 238, 0.95);
+  background-color: #00ffff;
 }
 
+/* 🔴 Bright Red */
 .ButtonsContainer button:nth-child(2) {
-  background-color: rgba(241, 170, 170, 0.95);
+  background-color: #ff4f4f;
 }
 
 .ButtonsContainer .noHoverEffect:hover {
