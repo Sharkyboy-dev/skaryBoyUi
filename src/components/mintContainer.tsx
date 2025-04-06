@@ -6,31 +6,17 @@ import Link from "next/link";
 
 const MintContainer = () => {
   return (
-    <section className="comic-panel" style={{ position: "relative", overflow: "hidden" }}>
-      {/* ✅ Floating Emoji Bubbles (Sharks & Diamonds) */}
-      <div style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        zIndex: 0,
-        pointerEvents: "none",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-around",
-        alignItems: "center",
-        gap: "2rem",
-        opacity: 0.6
-      }}>
-        <div className="emoji-bubble shark">🦈</div>
-        <div className="emoji-bubble diamond">💎</div>
-        <div className="emoji-bubble shark">🦈</div>
-        <div className="emoji-bubble diamond">💎</div>
-        <div className="emoji-bubble shark">🦈</div>
+    <section className="comic-panel">
+      {/* ✅ Floating Bubbles Layer */}
+      <div className="bubbles">
+        <span>🦈</span>
+        <span>💎</span>
+        <span>🦈</span>
+        <span>💎</span>
+        <span>🦈</span>
       </div>
 
-      <div className={styles.MintDiv} style={{ position: "relative", zIndex: 1 }}>
+      <div className={styles.MintDiv}>
         <div className={styles.ContentContainer}>
           {/* LEFT SIDE */}
           <div className={styles.ContentLeft}>
