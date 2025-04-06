@@ -1,43 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
 .MintDiv {
-  /* border: 1px solid rgb(0, 0, 0); */
   padding: 2em 1em;
   min-height: fit-content;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .ContentContainer {
-  /* border: 1px solid rgb(0, 0, 0); */
   margin: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
-}
-
-.ContentLeft {
-  width: fit-content;
-  border: 4px solid rgb(77, 77, 77);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2em;
+  text-align: center;
+}
+
+.ContentLeft {
+  border: 4px solid rgb(77, 77, 77);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1em;
-  padding: 1.5em 1.5em 1em 1.5em;
+  padding: 1.5em;
   background-color: rgba(0, 0, 0, 0.664);
   border-radius: 1em;
-  /* display: none; */
+  width: 100%;
+  max-width: 600px; /* ✅ Updated from 400px to 600px to match ContentRight */
 }
 
 .ContentLeft img {
-  width: 400px;
-  /* height: 450px; */
+  width: 100%;
+  max-width: 100%; /* ✅ Ensures image doesn't overflow */
   border-radius: 1em;
   padding: 10px;
-  box-shadow: 2 2 15px solid white;
-}
-
-.ContentLeft span {
-  font-size: 2em;
-  color: white;
+  box-shadow: 0 0 15px white;
 }
 
 .ContentLeft button {
@@ -48,22 +45,24 @@
   border-radius: 10px;
   border: 4px solid white;
   cursor: pointer;
-  font-family: myFont, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .ContentRight {
-  width: 50%;
-  /* border: 1px solid red; */
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
 
 .DescDiv {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  align-items: center;
+  gap: 1.5em;
   background-color: rgba(0, 0, 0, 0.664);
   border: 4px solid white;
   padding: 2em 1em;
@@ -72,9 +71,10 @@
 
 .DescDiv span {
   color: white;
-  font-size: 1.7em;
-  font-weight: 700;
+  font-size: 1.8em;
+  font-weight: 900;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .ButtonsContainer {
@@ -83,18 +83,25 @@
   gap: 1em;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .ButtonsContainer button {
-  width: 20em;
+  width: auto; /* ✅ Let the button auto-size based on content */
+  min-width: 200px; /* ✅ Ensures a minimum size for consistency */
+  max-width: 90%;
+  padding: 0.6em 1.2em; /* ✅ Increased horizontal padding */
   font-size: 1.3em;
-  padding: 0.4em 0;
   border-radius: 10px;
   border: 4px solid white;
   color: black;
+  font-weight: 900;
   text-transform: uppercase;
-  font-weight: 600;
   cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  word-wrap: break-word; /* ✅ Ensures long words wrap */
+  text-align: center;
+  white-space: normal; /* ✅ Allow wrapping */
 }
 
 .ButtonsContainer button:nth-child(1) {
@@ -107,14 +114,23 @@
 
 .IconsContainer {
   display: flex;
-  justify-content: space-around;
-  padding: 1em 0 0 0;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1em;
 }
 
 .IconsContainer a {
-  font-size: 3em;
+  font-size: 2.5em;
+  color: white;
+  transition: transform 0.2s ease;
 }
 
+.IconsContainer a:hover {
+  transform: scale(1.2);
+  color: #d4af37;
+}
+
+/* Optional Mint Bar stuff */
 .MintCountBox {
   background-color: rgb(0, 0, 0);
   padding: 2em;
@@ -135,37 +151,29 @@
 .Counttext {
   display: flex;
   width: 100%;
-  /* border: 1px solid white; */
   flex-direction: row;
   align-items: center;
 }
 
+/* Responsive tweaks */
 @media screen and (max-width: 950px) {
-  .ContentContainer {
-    flex-direction: column;
-  }
-
-  .ContentRight {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .ContentContainer {
-    flex-direction: column;
-    margin: 1em 0;
-  }
-
   .ContentRight,
   .ContentLeft {
     width: 100%;
   }
+}
 
+@media screen and (max-width: 550px) {
   .ContentLeft img {
     width: 100%;
   }
 
   .ButtonsContainer button {
     width: 90%;
+  }
+
+  .IconsContainer {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }
