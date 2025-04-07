@@ -2,10 +2,14 @@
 import React from "react";
 import styles from "./NFTGallery.module.css";
 
-const TOTAL_IMAGES = 10; // Start with 10 test images
+// ✅ Number of images to scroll
+const TOTAL_IMAGES = 250; // or 1000 if you're ready
+
+// ✅ GitHub raw image base URL
+const BASE_URL = "https://raw.githubusercontent.com/Sharkyboy-dev/sharkyboy-nft-images/main/nfts";
 
 const NFTGallery = () => {
-  const images = Array.from({ length: TOTAL_IMAGES }, (_, i) => `/nfts-test/${i + 1}.png`);
+  const images = Array.from({ length: TOTAL_IMAGES }, (_, i) => `${BASE_URL}/${i + 1}.png`);
 
   return (
     <div className={styles.galleryWrapper}>
