@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./about.module.css";
+import NFTGallery from "./NFTGallery"; // ✅ Adjust path if needed
 
 const About = () => {
   return (
@@ -39,9 +40,9 @@ const About = () => {
         </div>
       </div>
 
-      {/* ✅ Matching Blank Panel (for future content) */}
+      {/* ✅ Matching NFT Comic Window Panel */}
       <div className={styles.blankPanel}>
-        {/* You can place future content here */}
+        <NFTGallery />
       </div>
     </section>
   );
