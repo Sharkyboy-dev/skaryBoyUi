@@ -5,8 +5,8 @@ import styles from "./NFTGallery.module.css";
 // ✅ Number of images to scroll
 const TOTAL_IMAGES = 250; // or 1000 if you're ready
 
-// ✅ GitHub raw image base URL
-const BASE_URL = "https://raw.githubusercontent.com/Sharkyboy-dev/sharkyboy-nft-images/main/nfts";
+// ✅ Public GitHub Pages image base URL
+const BASE_URL = "https://sharkyboy-dev.github.io/sharkyboy-nft-images/nfts";
 
 const NFTGallery = () => {
   const images = Array.from({ length: TOTAL_IMAGES }, (_, i) => `${BASE_URL}/${i + 1}.png`);
