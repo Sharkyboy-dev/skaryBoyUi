@@ -2,8 +2,11 @@
 import React from "react";
 import styles from "./NFTGallery.module.css";
 
-const TOTAL_IMAGES = 250;
-const BASE_URL = "https://cdn.jsdelivr.net/gh/Sharkyboy-dev/sharkyboy-nft-images/nfts";
+// 🔹 Total images you want to show (start with 100 for speed, 1000 max)
+const TOTAL_IMAGES = 100;
+
+// ✅ Replace with your actual blob domain
+const BASE_URL = "https://skary-boy-ui-blob.vercel.app";
 
 const NFTGallery = () => {
   const images = Array.from({ length: TOTAL_IMAGES }, (_, i) => `${BASE_URL}/${i + 1}.png`);
@@ -18,7 +21,7 @@ const NFTGallery = () => {
             alt={`SharkyBoy #${index + 1}`}
             className={styles.nftImage}
             onError={(e) => {
-              e.currentTarget.style.display = "none";
+              e.currentTarget.style.display = "none"; // Hide broken ones
             }}
           />
         ))}
