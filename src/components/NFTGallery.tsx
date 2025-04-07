@@ -2,10 +2,10 @@
 import React from "react";
 import styles from "./NFTGallery.module.css";
 
-const TOTAL_IMAGES = 250; // or 1000
+const TOTAL_IMAGES = 10; // Start with 10 test images
 
 const NFTGallery = () => {
-  const images = Array.from({ length: TOTAL_IMAGES }, (_, i) => `/nfts/${i + 1}.png`);
+  const images = Array.from({ length: TOTAL_IMAGES }, (_, i) => `/nfts-test/${i + 1}.png`);
 
   return (
     <div className={styles.galleryWrapper}>
