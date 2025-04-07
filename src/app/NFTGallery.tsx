@@ -1,24 +1,17 @@
 "use client";
 import React from "react";
-import styles from "./NFTGallery.module.css";
+import styles from "./nftGallery.module.css";
 
-const nftImages = [
-  "/nfts/nft1.png",
-  "/nfts/nft2.png",
-  "/nfts/nft3.png",
-  "/nfts/nft4.png",
-  "/nfts/nft5.png"
-];
+const TOTAL_IMAGES = 50; // 🔄 Adjust based on performance
 
 const NFTGallery = () => {
+  const images = Array.from({ length: TOTAL_IMAGES }, (_, i) => `/nfts/${i + 1}.png`);
+
   return (
-    <div className={styles.galleryContainer}>
-      <div className={styles.scroller}>
-        {nftImages.map((src, i) => (
-          <img key={i} src={src} alt={`SharkyBoy NFT ${i}`} />
-        ))}
-        {nftImages.map((src, i) => (
-          <img key={`loop-${i}`} src={src} alt={`SharkyBoy NFT ${i}`} />
+    <div className={styles.galleryWrapper}>
+      <div className={styles.scrollTrack}>
+        {images.map((src, index) => (
+          <img key={index} src={src} alt={`SharkyBoy #${index + 1}`} className={styles.nftImage} />
         ))}
       </div>
     </div>
@@ -26,4 +19,3 @@ const NFTGallery = () => {
 };
 
 export default NFTGallery;
-
