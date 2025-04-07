@@ -6,8 +6,13 @@ const About = () => {
   return (
     <section className={styles.aboutWrapper} id="about">
       <div className={styles.aboutPanel}>
-        <h2 className={styles.aboutTitle}>About Us</h2>
-        <div className={styles.description}>
+        <h2 className={styles.aboutTitle}>ABOUT US</h2>
+
+        <div className={styles.speechBubble}>
+          A DEEP-SEA SAGA POWERED BY THE COMMUNITY 🦈💥
+        </div>
+
+        <div className={styles.descriptionBox}>
           <p>
             SHARKYBOY IS MORE THAN JUST AN NFT COLLECTION — IT'S A STORY-DRIVEN
             COMMUNITY BUILT AROUND A RICH, EVOLVING NARRATIVE AND EXCLUSIVE
@@ -28,7 +33,8 @@ const About = () => {
             <li>🌐 COMMUNITY-POWERED GOVERNANCE</li>
           </ul>
         </div>
-        <div className={styles.description}>
+
+        <div className={styles.descriptionBox}>
           <p>
             JOIN US AS WE EXPAND THE SHARKYBOY UNIVERSE — FROM NFTS TO COMICS,
             COLLECTIBLES, AND BEYOND. THIS IS JUST THE BEGINNING. WILL YOU BE PART
