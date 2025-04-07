@@ -1,15 +1,14 @@
 "use client";
 import React from "react";
 import styles from "./about.module.css";
-import NFTGallery from "./NFTGallery"; // ✅ Gallery for SharkyBoy NFTs
+import NFTGallery from "./NFTGallery";
 
 const About = () => {
   return (
     <section className={styles.aboutWrapper} id="about">
-      {/* ✅ Left Panel: About Content */}
+      {/* ✅ About Panel */}
       <div className={styles.aboutPanel}>
         <h2 className={styles.aboutTitle}>About Us</h2>
-
         <div className={styles.description}>
           <p>
             SHARKYBOY IS MORE THAN JUST AN NFT COLLECTION — IT'S A STORY-DRIVEN
@@ -31,7 +30,6 @@ const About = () => {
             <li>🌐 COMMUNITY-POWERED GOVERNANCE</li>
           </ul>
         </div>
-
         <div className={styles.description}>
           <p>
             JOIN US AS WE EXPAND THE SHARKYBOY UNIVERSE — FROM NFTS TO COMICS,
@@ -42,7 +40,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* ✅ Right Panel: NFT Auto-Scrolling Comic Window */}
+      {/* ✅ NFT Scroll Gallery Panel */}
       <div className={styles.blankPanel}>
         <NFTGallery />
       </div>
