@@ -1,13 +1,9 @@
 .aboutWrapper {
-  padding: 3em 4em;
+  padding: 3em 4em; /* Matches .MainContainer padding */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  flex-direction: column;
-  gap: 2em;
-  position: relative;
-  z-index: 1;
+  background-color: black; /* Consistent with .MainContainer */
 }
 
 .aboutPanel {
@@ -25,7 +21,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 1200px; /* ✅ MATCH outer MintContainer */
+  max-width: 1000px; /* Matches .ContentContainer max-width */
 }
 
 .aboutTitle {
