@@ -4,22 +4,33 @@
   border: 6px solid white;
   border-radius: 1em;
   box-shadow: 6px 6px 0 #ff00ff;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 1em;
+  position: relative;
 }
 
 .scrollTrack {
   display: flex;
-  animation: scroll 100s linear infinite;
+  animation: scroll 120s linear infinite;
   gap: 1em;
+}
+
+.imageFrame {
+  border: 4px solid white;
+  border-radius: 0.8em;
+  background: black;
+  padding: 0.5em;
+  box-shadow: 4px 4px 0 #00ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nftImage {
   height: 180px;
-  border-radius: 10px;
-  border: 4px solid white;
-  box-shadow: 4px 4px 0 #00ffff;
-  flex-shrink: 0;
+  width: auto;
+  object-fit: cover;
+  border-radius: 0.5em;
 }
 
 @keyframes scroll {
@@ -27,6 +38,6 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
