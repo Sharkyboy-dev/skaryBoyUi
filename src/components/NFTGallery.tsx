@@ -17,7 +17,12 @@ const nftImageMap: { [id: number]: string } = {
   19: "https://nte2vqorwtt1wdls.public.blob.vercel-storage.com/nfts_clean_final/19-HYAmWtGWjSt3K9p9AVyeCUbgd5WRPR.png",
   20: "https://nte2vqorwtt1wdls.public.blob.vercel-storage.com/nfts_clean_final/20-4cDu7eUxoQgMRRoNww408O6rGFUPDN.png",
   21: "https://nte2vqorwtt1wdls.public.blob.vercel-storage.com/nfts_clean_final/21-BkaMoLQ0GG3KH4TFaQmNF5ysXrIqid.png",
-  22: "https://nte2vqorwtt1wdls.public.blob.vercel-storage.com/nfts_clean_final/22-tJjbRM89QKSQnlXV7TWFh87sO6wkhR.png"
+  22: "https://nte2vqorwtt1wdls.public.blob.vercel-storage.com/nfts_clean_final/22-tJjbRM89QKSQnlXV7TWFh87sO6wkhR.png",
+  23: "https://nte2vqorwtt1wdls.public.blob.vercel-storage.com/nfts_clean_final/23-lZPjKem76OuH5k0aOykOJko38XS8Cm.png",
+  24: "https://nte2vqorwtt1wdls.public.blob.vercel-storage.com/nfts_clean_final/24-YAsWjRD72gbGa9tKCSHz1h2GOu6x9V.png",
+  25: "https://nte2vqorwtt1wdls.public.blob.vercel-storage.com/nfts_clean_final/25-3w8fKsYX5WFtSD30fP7RT2Q3q2y40E.png",
+  26: "https://nte2vqorwtt1wdls.public.blob.vercel-storage.com/nfts_clean_final/26-VvePkx3eq4MwFWbtCIzOzZn6mQ2BAw.png",
+  28: "https://nte2vqorwtt1wdls.public.blob.vercel-storage.com/nfts_clean_final/28-KIlLWVgd1UdTcNz4cLLy2FBIBghtmX.png"
 };
 
 const NFTGallery = () => {
