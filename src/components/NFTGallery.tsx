@@ -32,13 +32,14 @@ const nftImageMap: { [id: number]: string } = {
 
 const NFTGallery = () => {
   const images = Object.entries(nftImageMap);
+  const loopedImages = [...images, ...images]; // Duplicate to simulate infinite scroll
 
   return (
     <div className={styles.galleryWrapper}>
       <div className={styles.scrollTrack}>
-        {images.map(([id, src]) => (
+        {loopedImages.map(([id, src], index) => (
           <img
-            key={id}
+            key={`${id}-${index}`}
             src={src}
             alt={`SharkyBoy #${id}`}
             className={styles.nftImage}
