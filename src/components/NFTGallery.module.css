@@ -3,12 +3,15 @@
   width: 100%;
   padding: 1rem;
   box-sizing: border-box;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .scrollTrack {
   display: flex;
   animation: scrollLoop 60s linear infinite;
   width: max-content;
+  gap: 1em;
 }
 
 .nftImage {
