@@ -1,31 +1,31 @@
 .galleryWrapper {
   overflow: hidden;
   width: 100%;
-  padding: 20px;
-  border: 4px solid white;
-  border-radius: 16px;
-  background: #0a0a0a;
+  height: 220px;
   position: relative;
+  border: 4px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: transparent;
 }
 
 .scrollTrack {
   display: flex;
   gap: 12px;
-  animation: scroll 60s linear infinite;
+  animation: scrollLeft 60s linear infinite;
   width: fit-content;
 }
 
 .nftImage {
-  width: 140px;
-  height: auto;
-  border: 3px solid cyan;
+  height: 180px;
+  width: auto;
+  border: 4px solid aqua;
   border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
-  background-color: #111;
+  object-fit: contain;
 }
 
-/* Keyframes for smooth scroll loop */
-@keyframes scroll {
+/* Animation keyframes */
+@keyframes scrollLeft {
   0% {
     transform: translateX(0%);
   }
